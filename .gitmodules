@@ -1,0 +1,6 @@
+[submodule ".zprezto"]
+	path = .zprezto
+	url = git@github.com:sorin-ionescu/prezto.git
+[submodule "extras/vim-plug"]
+	path = extras/vim-plug
+	url = git@github.com:junegunn/vim-plug
