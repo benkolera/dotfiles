@@ -5,7 +5,7 @@ fi
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 [[ $TMUX = "" ]] && export TERM="xterm-256color"
 
-for i in $( find /Users/ben/.zsh.d/ -type f )
+for i in $( find $HOME/.zsh.d/ -type f )
 do
   source $i
 done
