@@ -10,16 +10,20 @@ Plug 'scrooloose/nerdtree'
 Plug 'reedes/vim-thematic'
 Plug 'bling/vim-airline'
 Plug 'derekwyatt/vim-scala'
+Plug 'petelewis/vim-evolution'
 
 call plug#end()
 
 filetype plugin indent on
 set hidden 
-set history=100 
+set history=1000
 set number
 syntax on
 syntax enable
 set t_Co=256
+colorscheme evolution
+let g:airline_theme='molokai'
+set clipboard=unnamed
 
 set encoding=utf-8              " standard encoding
 set number                      " Its nice to see line numbers
@@ -63,7 +67,7 @@ set list listchars=tab:\ \ ,trail:·   " Display tabs and trailing spaces visual
 set nowrap                            " Don't wrap lines
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 set noshowmode " Let airline handle the mode display
 
 let g:syntastic_check_on_open = 1
@@ -73,7 +77,12 @@ let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_javascript_checkers = ["eslint"]
 
 map <leader>t :NERDTreeToggle<CR>
-let NERDTreeHijackNetrw=1 "Put Nerdtree into a window
-
 map <leader>f :CtrlP<CR>
+map <leader>wh :wincmd h<CR>
+map <leader>wl :wincmd l<CR>
+map <leader>wj :wincmd j<CR>
+map <leader>wk :wincmd k<CR>
+map <leader>ws :sp<CR>
+map <leader>wv :vs<CR>
+
 
