@@ -8,7 +8,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'derekwyatt/vim-scala'
-Plug 'petelewis/vim-evolution'
+Plug 'geoffharcourt/one-dark.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
@@ -19,7 +21,7 @@ set number
 syntax on
 syntax enable
 set t_Co=256
-colorscheme evolution
+colorscheme onedark
 let g:airline_theme='molokai'
 set clipboard=unnamed
 
@@ -87,3 +89,6 @@ map <leader>gf :Git pull<CR>
 map <leader>gc :Gcommit<CR>
 map <leader>gp :Git push<CR>
 map <leader>gb :Gblame<CR>
+
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
