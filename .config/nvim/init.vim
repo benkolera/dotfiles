@@ -4,10 +4,8 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-grepper'
-Plug 'fholgado/minibufexpl.vim'
-Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
-Plug 'reedes/vim-thematic'
+Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'derekwyatt/vim-scala'
 Plug 'petelewis/vim-evolution'
@@ -66,18 +64,17 @@ set expandtab
 set list listchars=tab:\ \ ,trail:·   " Display tabs and trailing spaces visually
 set nowrap                            " Don't wrap lines
 
-let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set noshowmode " Let airline handle the mode display
 
-let g:syntastic_check_on_open = 1
-map <Leader>e :Errors<cr>
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "⚠"
-let g:syntastic_javascript_checkers = ["eslint"]
+autocmd! BufWritePost * Neomake
 
 map <leader>t :NERDTreeToggle<CR>
-map <leader>f :CtrlP<CR>
+
+map <leader>ff :CtrlP<CR>
+map <leader>fe :e 
+map <leader>fg :Grepper! -tool ag  -open -switch<CR>
+
 map <leader>wh :wincmd h<CR>
 map <leader>wl :wincmd l<CR>
 map <leader>wj :wincmd j<CR>
@@ -85,4 +82,8 @@ map <leader>wk :wincmd k<CR>
 map <leader>ws :sp<CR>
 map <leader>wv :vs<CR>
 
-
+map <leader>gs :Gstatus<CR>
+map <leader>gf :Git pull<CR>
+map <leader>gc :Gcommit<CR>
+map <leader>gp :Git push<CR>
+map <leader>gb :Gblame<CR>
