@@ -1,4 +1,4 @@
-sudo dnf install feh xmonad
-dnf -y install dnf-plugins-core
-dnf -y copr enable dperson/neovim
-dnf -y install neovim
+sudo dnf -y install feh xmonad zsh
+sudo dnf -y install dnf-plugins-core
+sudo dnf -y copr enable dperson/neovim
+sudo dnf -y install neovim
