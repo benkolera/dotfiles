@@ -1,2 +1,5 @@
 .config/nvim/plugged
 .config/nvim/autoload/plug.vim
+.xmonad/xmonad.errors
+.xmonad/xmonad.o
+.xmonad/xmonad.hi
