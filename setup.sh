@@ -25,4 +25,4 @@ done;
 
 ln -s $(pwd)/extras/vim-plug/plug.vim $HOME/.config/nvim/autoload/plug.vim
 
-sh install.$1.sh
+sudo sh install.$1.sh
