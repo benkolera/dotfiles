@@ -4,6 +4,7 @@ mkdir -p ~/.config
 
 files=(
   .zshrc
+  .zpreztorc
   .zlogin
   .zprofile
   .zshenv
