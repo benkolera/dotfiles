@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/zsh
 
 mkdir -p ~/.config
 
