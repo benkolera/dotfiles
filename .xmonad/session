@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+feh --bg-scale /home/ben/Pictures/rainbow_dash_by_hyhlion-d5fizy2.jpg &
