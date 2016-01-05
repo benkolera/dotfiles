@@ -11,6 +11,7 @@ Plug 'derekwyatt/vim-scala'
 Plug 'geoffharcourt/one-dark.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
+Plug 'nblock/vim-dokuwiki'
 
 call plug#end()
 
