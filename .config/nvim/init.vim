@@ -15,6 +15,9 @@ Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-markdown'
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'ensime/ensime-vim'
+Plug 'nblock/vim-dokuwiki'
+Plug 'eagletmt/neco-ghc'
 call plug#end()
 
 filetype plugin indent on

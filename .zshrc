@@ -5,6 +5,8 @@ fi
 [[ $TMUX = "" ]] && export TERM="xterm-256color"
 bindkey -v
 
+export BROWSER=google-chrome
+
 for i in $( find $HOME/.zsh.d/ -type f )
 do
   source $i

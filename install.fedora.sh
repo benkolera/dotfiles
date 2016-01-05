@@ -10,4 +10,6 @@ gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 EOF
 
-dnf -y install zsh yp-tools xsel neovim google-chrome
+curl -sSL https://s3.amazonaws.com/download.fpcomplete.com/fedora/23/fpco.repo | sudo tee /etc/yum.repos.d/fpco.repo
+
+dnf -y install zsh yp-tools xsel neovim google-chrome stack

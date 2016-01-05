@@ -4,3 +4,6 @@
 [submodule "extras/vim-plug"]
 	path = extras/vim-plug
 	url = git@github.com:junegunn/vim-plug
+[submodule "sbt-extras"]
+	path = sbt-extras
+	url = https://github.com/paulp/sbt-extras
