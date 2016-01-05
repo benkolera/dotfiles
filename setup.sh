@@ -1,8 +1,28 @@
 #!/usr/bin/bash
 
 mkdir -p ~/.config
-ln -sf $(pwd)/.zshrc ~/.zshrc
-ln -sf $(pwd)/.zsh.d ~/.zsh.d
-ln -sf $(pwd)/.tmux.conf ~/.tmux.conf
-ln -sf $(pwd)/.config/nvim ~/.config/nvim
-ln -sf $(pwd)/extras/vim-plug/plug.vim ~/.config/nvim/autoload/plug.vim
+
+files=(
+  .zshrc
+  .zpreztorc
+  .zlogin
+  .zprofile
+  .zshenv
+  .zlogin
+  .zlogout
+  .tmux.conf
+)
+
+dirs=(.zsh.d .xmonad .zprezto .config/nvim)
+
+for f in ${files[@]}; do
+  ln -sf $(pwd)/$f $HOME/$f
+done;
+
+for d in ${dirs[@]}; do
+  ln -sf $(pwd)/$d $(dirname $HOME/$d)
+done;
+
+ln -s $(pwd)/extras/vim-plug/plug.vim $HOME/.config/nvim/autoload/plug.vim
+
+sudo sh install.$1.sh

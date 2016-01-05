@@ -12,7 +12,10 @@ Plug 'geoffharcourt/one-dark.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
 Plug 'nblock/vim-dokuwiki'
-
+Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-markdown'
+Plug 'cakebaker/scss-syntax.vim'
 call plug#end()
 
 filetype plugin indent on
