@@ -58,6 +58,7 @@ Boot up nvim and run these things
 
 Stack
 -----
-stack setup && stack install ghc-mod (if you need haskell; this will take a while)
+If you need haskell, run this (it'll take a while):
+stack setup && stack install ghc-mod 
 
 EOF
