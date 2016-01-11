@@ -19,6 +19,8 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'ensime/ensime-vim'
 Plug 'nblock/vim-dokuwiki'
 Plug 'eagletmt/neco-ghc'
+Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-speeddating'
 call plug#end()
 
 filetype plugin indent on
