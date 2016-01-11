@@ -21,6 +21,10 @@ Plug 'nblock/vim-dokuwiki'
 Plug 'eagletmt/neco-ghc'
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'
+Plug 'antlypls/vim-colors-codeschool'
+Plug 'vim-scripts/lilypink'
+Plug 'jlund3/colorschemer'
+Plug 'MPiccinato/wombat256'
 call plug#end()
 
 filetype plugin indent on
