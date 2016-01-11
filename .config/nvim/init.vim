@@ -31,6 +31,7 @@ set t_Co=256
 colorscheme onedark
 let g:airline_theme='molokai'
 set clipboard=unnamed
+set nospell
 
 set encoding=utf-8              " standard encoding
 set number                      " Its nice to see line numbers
