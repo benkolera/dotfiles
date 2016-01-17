@@ -19,6 +19,12 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'ensime/ensime-vim'
 Plug 'nblock/vim-dokuwiki'
 Plug 'eagletmt/neco-ghc'
+Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-speeddating'
+Plug 'antlypls/vim-colors-codeschool'
+Plug 'vim-scripts/lilypink'
+Plug 'jlund3/colorschemer'
+Plug 'MPiccinato/wombat256'
 call plug#end()
 
 filetype plugin indent on
@@ -31,6 +37,7 @@ set t_Co=256
 colorscheme onedark
 let g:airline_theme='molokai'
 set clipboard=unnamed
+set nospell
 
 set encoding=utf-8              " standard encoding
 set number                      " Its nice to see line numbers
