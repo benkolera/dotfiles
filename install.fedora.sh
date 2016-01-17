@@ -24,3 +24,7 @@ EOF
 curl -sSL https://s3.amazonaws.com/download.fpcomplete.com/fedora/23/fpco.repo | sudo tee /etc/yum.repos.d/fpco.repo
 
 dnf -y install zsh yp-tools xsel neovim google-chrome stack mplayer dialog gmrun docker-engine
+
+systemctl start docker
+systemctl enable docker
+usermod -aG docker $OUR_USER

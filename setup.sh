@@ -44,8 +44,12 @@ ln -sf $(pwd)/extras/vim-plug/plug.vim $HOME/.config/nvim/autoload/plug.vim
 ln -sf $(pwd)/sbt-extras/sbt $HOME/bin/sbt
 
 if [[ ! -z "$1" ]] ; then 
+  export OUR_USER=$USER;
   sudo sh install.$1.sh
 fi
+
+curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
+$HOME/bin/cs n8han/giter8
 
 cat <<EOF
 Post Installation Notes
