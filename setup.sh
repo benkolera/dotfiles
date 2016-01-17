@@ -14,7 +14,6 @@ files=(
   .zlogin
   .zlogout
   .tmux.conf
-  .xmobarrc
 )
 
 dirs=(
