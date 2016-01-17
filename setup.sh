@@ -3,6 +3,7 @@
 mkdirs=(
   .config
   .sbt/0.13
+  bin
 )
 
 files=(
@@ -15,6 +16,8 @@ files=(
   .zlogout
   .tmux.conf
   .sbt/repositories
+  bin/difmplay
+  .difmplayrc
 )
 
 dirs=(
@@ -44,7 +47,7 @@ if [[ ! -z "$1" ]] ; then
   sudo sh install.$1.sh
 fi
 
-echo <<EOF
+cat <<EOF
 Post Installation Notes
 =======================
 
@@ -62,4 +65,7 @@ Stack
 If you need haskell, run this (it'll take a while):
 stack setup && stack install ghc-mod 
 
+DiFmPlay
+--------
+Get your premium DI key from http://www.di.fm/settings and put it into $HOME/.difmplay.key !
 EOF

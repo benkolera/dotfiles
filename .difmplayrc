@@ -1,0 +1,3 @@
+BITRATE=256
+MENU=yes
+PREMIUM=$(cat .difmplay.key | tr -d "\n")
