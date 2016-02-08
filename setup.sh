@@ -45,7 +45,11 @@ ln -sf $(pwd)/sbt-extras/sbt $HOME/bin/sbt
 
 if [[ ! -z "$1" ]] ; then 
   export OUR_USER=$USER;
-  sudo sh install.$1.sh
+  if [[ $1 -eq "osx" ]]; then
+    bash install.osx.sh
+  else 
+    sudo bash install.$1.sh
+  fi
 fi
 
 curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
@@ -69,7 +73,7 @@ Stack
 If you need haskell, run this (it'll take a while):
 stack setup && stack install ghc-mod 
 
-DiFmPlay
---------
+DiFmPlay (Linux Only)
+----------------------
 Get your premium DI key from http://www.di.fm/settings and put it into $HOME/.difmplay.key !
 EOF

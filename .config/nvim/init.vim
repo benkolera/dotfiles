@@ -25,6 +25,7 @@ Plug 'antlypls/vim-colors-codeschool'
 Plug 'vim-scripts/lilypink'
 Plug 'jlund3/colorschemer'
 Plug 'MPiccinato/wombat256'
+Plug 'raichoo/purescript-vim'
 call plug#end()
 
 filetype plugin indent on
@@ -106,3 +107,5 @@ map <leader>gb :Gblame<CR>
 
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+let g:user_emmet_expandabbr_key = '<tab>'
