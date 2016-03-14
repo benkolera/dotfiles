@@ -45,7 +45,7 @@ ln -sf $(pwd)/sbt-extras/sbt $HOME/bin/sbt
 
 if [[ ! -z "$1" ]] ; then 
   export OUR_USER=$USER;
-  if [[ $1 -eq "osx" ]]; then
+  if [[ "$1" == "osx" ]]; then
     bash install.osx.sh
   else 
     sudo bash install.$1.sh

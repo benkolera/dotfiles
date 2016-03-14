@@ -26,6 +26,7 @@ Plug 'vim-scripts/lilypink'
 Plug 'jlund3/colorschemer'
 Plug 'MPiccinato/wombat256'
 Plug 'raichoo/purescript-vim'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 filetype plugin indent on
