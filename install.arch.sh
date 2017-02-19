@@ -1,1 +1,6 @@
-pacman -S mplayer yp-tools zsh xsel neovim python-neovim chromium dialog gmrun docker jdk8-openjdk sudo pacman -S python2-neovim python-neovim
+pacman -S wget
+wget http://aur.archlinux.org/packages/au/aurget/aurget.tar.gz && \
+  tar -xvf ./aurget.tar.gz && \
+  cd aurget && makepkg -si --noconfirm
+
+pacman -S mplayer zsh xsel chromium dialog docker jdk8-openjdk i3 emacs maim slop
