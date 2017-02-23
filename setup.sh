@@ -11,6 +11,7 @@ files=(
   .sbt/repositories
   bin/difmplay
   .difmplayrc
+  .xinitrc
 )
 
 dirs=(
