@@ -16,6 +16,7 @@ files=(
 
 dirs=(
   .zsh.d
+  .config/i3
   .sbt/0.13/plugins
 )
 
