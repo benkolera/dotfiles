@@ -1,2 +1,2 @@
 git remote add werk ssh://bkolera/$PWD
-git pull werk $(git rev-parse --abbrev-ref HEAD)
+git pull werk HEAD
