@@ -9,9 +9,9 @@ mkdirs=(
 files=(
   .zshrc
   .sbt/repositories
-  bin/difmplay
   .difmplayrc
   .xinitrc
+  $(find ./bin/)
 )
 
 dirs=(
@@ -25,6 +25,7 @@ for d in ${mkdirs[@]}; do
 done
 
 for f in ${files[@]}; do
+	echo $f
   ln -sf $(pwd)/$f $HOME/$f
 done;
 
